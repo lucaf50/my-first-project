@@ -98,7 +98,8 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     color: var(--text-color);
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     
     .btn {
         background-color: var(--detail-color);
