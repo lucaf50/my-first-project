@@ -220,7 +220,7 @@ body.dark-theme {
 
 @font-face {
   font-family: "Cooper-Hewitt";
-  src: url("/assets/fonts/CooperHewitt-WebFonts-public/CooperHewitt-Medium.woff") format("woff");
+  src: url("../fonts/CooperHewitt-WebFonts-public/CooperHewitt-Medium.woff") format("woff");
 }
 body {
   background-color: var(--primary-color);
@@ -380,7 +380,7 @@ h1 {
   align-items: center;
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: url("./assets/images/lightorange.png");
+  background-image: url("../images/lightorange.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -414,7 +414,7 @@ h1 {
 }
 @media only screen and (min-width: 1060px) {
   .title-container {
-    background-image: url("./assets/images/lightorange-desktop.png");
+    background-image: url("../images/lightorange-desktop.png");
   }
   .title-container .title-box h2 {
     font-size: 3em;
@@ -426,7 +426,7 @@ h1 {
 }
 @media only screen and (min-height: 901px) {
   .title-container {
-    background-image: url("./assets/images/lightorange-desktop.png");
+    background-image: url("../images/lightorange-desktop.png");
   }
   .title-container .title-box h2 {
     font-size: 3em;
@@ -511,12 +511,12 @@ h1 {
     --text-color: #ffffff;
   }
   .title-container {
-    background-image: url("./assets/images/darkorange.png");
+    background-image: url("../images/darkorange.png");
     /* Desktop Styles */
   }
 }
 @media only screen and (prefers-color-scheme: dark) and (min-width: 960px) {
   .title-container {
-    background-image: url("./assets/images/darkorange-desktop.png");
+    background-image: url("../images/darkorange-desktop.png");
   }
 }/*# sourceMappingURL=main.css.map */
