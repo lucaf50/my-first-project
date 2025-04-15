@@ -1,0 +1,79 @@
+.about-me {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    h4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+    
+        img {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+        }
+    }
+    
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+
+    @media only screen and (min-width: 801px) {
+      flex-direction: row;
+      margin-top: 150px;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+}
+
+.tris {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+
+    h2 {
+        margin: 100px 0 40px 0;
+    }
+
+    .card-stats {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    }
+
+    /* Tablet Styles */
+    @media only screen and (max-width: 901px) {
+        .tris .row {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+    
+        .tris .col-4 {
+            flex: 0 0 auto !important; /* elimina il comportamento da griglia */
+            width: auto !important; /* togli 33.33% di Bootstrap */
+            display: flex;
+            justify-content: center;
+        }
+    
+        .tris .card {
+            width: 80vw;
+            min-width: 300px;
+            max-width: 400px;
+        }
+    }
+}

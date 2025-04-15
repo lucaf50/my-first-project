@@ -1,0 +1,111 @@
+.presentation{
+    margin: 20px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    border-bottom: 2px solid #373434;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    padding: 0px 0 10px 0;
+    color: #FFFFFF;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+  
+.form-row input[type='text'],
+.form-row input[type='email'] {
+    background-color: #000000;
+    border-bottom: 2px solid #373434;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    border: none;
+    color: #ffffff;
+}
+  
+.info input[type='text']:focus {
+    border-bottom: 2px solid #FFA142;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 35px;
+    border: none;
+    padding: 0px 7px;
+    resize: none; /* Con JS renderò automatica l'espansione del textarea */
+}
+  
+.form-row input[type='text']:focus,
+.form-row input[type='email']:focus,
+textarea:focus {
+    outline: 2px solid #FFA142;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #FFA142;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+  
+.form-row button:hover {
+    background-color: #fcbb7a;
+}
+  
+.form-row button:active {
+    background-color: #FFA142;
+}
+
+@media only screen and (min-width: 500px) {
+  .speaker-form {
+    width: 600px;
+  }
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row textarea {
+    width: 500px;
+    height: initial;
+  }
+
+  .form-row button {
+    margin-left: 120px;
+  }
+}

@@ -1,0 +1,30 @@
+$primary-color-dark: #000000;
+$secondary-color-dark: #ffa142;
+$detail-color-dark: #373434;
+$text-color-dark: #ffffff;
+
+$primary-color-light: #ffffff;
+$secondary-color-light: #ffa142;
+$detail-color-light: #dcdcdc;
+$text-color-light: #000000;
+
+@mixin theme-vars($primary, $secondary, $detail, $text) {
+    --primary-color: #{$primary};
+    --secondary-color: #{$secondary};
+    --detail-color: #{$detail};
+    --text-color: #{$text};
+  }
+  
+  :root {
+    @include theme-vars($primary-color-light, $secondary-color-light, $detail-color-light, $text-color-light);
+  }
+  
+  body.dark-theme {
+    @include theme-vars($primary-color-dark, $secondary-color-dark, $detail-color-dark, $text-color-dark);
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
