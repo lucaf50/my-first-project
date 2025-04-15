@@ -380,7 +380,7 @@ h1 {
   align-items: center;
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: url("/assets/images/lightorange.png");
+  background-image: url("./assets/images/lightorange.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -414,7 +414,7 @@ h1 {
 }
 @media only screen and (min-width: 1060px) {
   .title-container {
-    background-image: url("/assets/images/lightorange-desktop.png");
+    background-image: url("./assets/images/lightorange-desktop.png");
   }
   .title-container .title-box h2 {
     font-size: 3em;
@@ -426,7 +426,7 @@ h1 {
 }
 @media only screen and (min-height: 901px) {
   .title-container {
-    background-image: url("/assets/images/lightorange-desktop.png");
+    background-image: url("./assets/images/lightorange-desktop.png");
   }
   .title-container .title-box h2 {
     font-size: 3em;
@@ -511,18 +511,12 @@ h1 {
     --text-color: #ffffff;
   }
   .title-container {
-    background-image: url("/assets/images/darkorange.png");
+    background-image: url("./assets/images/darkorange.png");
     /* Desktop Styles */
   }
 }
 @media only screen and (prefers-color-scheme: dark) and (min-width: 960px) {
   .title-container {
-    background-image: url("/assets/images/darkorange-desktop.png");
+    background-image: url("./assets/images/darkorange-desktop.png");
   }
-}
-/* Tablet Styles 
-@media only screen and (min-width: 601px) and (max-width: 960px) {
-    .picture {
-      width: 50%;
-    }
-  }*//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
