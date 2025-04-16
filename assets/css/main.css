@@ -212,6 +212,59 @@ body.dark-theme {
     max-width: 650px;
   }
 }
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation h1 {
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.curriculum {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 40px 20px;
+  padding: 20px;
+}
+.curriculum h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+.curriculum ul {
+  list-style: none;
+  width: 50%;
+}
+.curriculum ul li {
+  font-size: 1.1em;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+.curriculum ul .date {
+  color: var(--detail-color);
+}
+@media only screen and (max-width: 800px) {
+  .curriculum {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .curriculum h2 {
+    align-items: flex-start;
+    width: 100%;
+  }
+  .curriculum ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
