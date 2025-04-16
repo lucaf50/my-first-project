@@ -17,7 +17,7 @@
                     <a href="./"><img src="./assets/images/logo.png" class="logo" alt="Personal logo with the initials of Luca Fraticola"></a>
                 </div>
                 
-                <input type="checkbox" class="menu-btn" id="menu-btn">
+                <input type="checkbox" class="menu-btn" id="menu-btn" aria-label="Open menu">
                 <label for="menu-btn" class="menu-icon">
                     <span class="nav-icon"></span>
                 </label>
@@ -28,6 +28,7 @@
                     <li><a href="contacts.html">Contacts</a></li>
                 </ul>
             </header>
+            <h1 class="visually-hidden">About Luca Fraticola</h1>
 
             <div class="about-me">
                 <div class="about-box">
@@ -49,15 +50,15 @@
                 </div>
             </div>
 
-            <div class="topographics container">
+            <section class="topographics container">
                 <div class="tris">
                     <h2>My holy trinity</h2>
                     <div class="container">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div>
-                                <div class="card h-100">
-                                    <img src="./assets/images/bike.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                                <figure class="card h-100">
+                                    <img src="./assets/images/bike.jpeg" class="card-img-top" alt="Puncture on a bike ride through hilly countryside">
+                                    <figcaption class="card-body">
                                         <h5 class="card-title">Never forget the repair kit</h5>
                                         <div class="card-stats">
                                             <p class="card-text">Distance</p>
@@ -71,33 +72,33 @@
                                             <p class="card-text">Avg. pace</p>
                                             <p class="card-text">27,4 km/h</p>
                                         </div>
-                                    </div>
-                                </div>
+                                    </figcaption>
+                                </figure>
                             </div>
                             <div>
-                                <div class="card h-100">
-                                    <img src="./assets/images/trek.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                                <figure class="card h-100">
+                                    <img src="./assets/images/trek.jpeg" class="card-img-top" alt="Mountain trek with Monviso mirrored in a lake">
+                                    <figcaption class="card-body">
                                         <h5 class="card-title">Invaluable time in nature</h5>
                                         <div class="card-stats">
                                             <p class="card-text">Distance</p>
-                                        <p class="card-text">6,42 km</p>
-                                    </div>
-                                    <div class="card-stats">
-                                        <p class="card-text">Total ascent</p>
-                                        <p class="card-text">668 m</p>
-                                    </div>
-                                    <div class="card-stats">
-                                        <p class="card-text">Avg. pace</p>
-                                        <p class="card-text">2,9 km/h</p>
+                                            <p class="card-text">6,42 km</p>
                                         </div>
-                                    </div>
-                                </div>
+                                        <div class="card-stats">
+                                            <p class="card-text">Total ascent</p>
+                                            <p class="card-text">668 m</p>
+                                        </div>
+                                        <div class="card-stats">
+                                            <p class="card-text">Avg. pace</p>
+                                            <p class="card-text">2,9 km/h</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
                             </div>
                             <div>
-                                <div class="card h-100">
-                                    <img src="./assets/images/run.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                                <figure class="card h-100">
+                                    <img src="./assets/images/run.jpeg" class="card-img-top" alt="Running along a scenic path in the woods">
+                                    <figcaption class="card-body">
                                         <h5 class="card-title">Best run I ever had</h5>
                                         <div class="card-stats">
                                             <p class="card-text">Distance</p>
@@ -111,16 +112,13 @@
                                             <p class="card-text">Avg. pace</p>
                                             <p class="card-text">4'22"/km</p>
                                         </div>
-                                    </div>
-                                </div>
+                                    </figcaption>
+                                </figure>
                             </div>
                         </div> 
                     </div>
-                    
                 </div>
-                
-
-            </div>
+            </section>
 
             <footer class="footer-container">
                 <div class="footer-items">
@@ -131,6 +129,5 @@
                 <div class="copyright"><h6>&copy; Designed by Luca Fraticola</h6></div>
             </footer>
         </div>
-        
     </body>
 </html>

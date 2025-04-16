@@ -1,3 +1,10 @@
+type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "W-nSteGhfZxOwArEH",
+            });
+        })();
+        
 document.querySelector(".form").addEventListener("submit", function (e) {
     e.preventDefault();
 
