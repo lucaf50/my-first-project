@@ -8,10 +8,25 @@ This site showcases who I am, what I do, and how you can get in touch with me.
 This is a responsive and modern portfolio built with:
 
 - **HTML5** for structure  
-- **SCSS** compiled to **CSS** for styling  
-- **JavaScript** for interactivity  
+- **SCSS** compiled to **CSS** for styling
 - **Bootstrap Icons** for visuals  
 - **EmailJS** (planned or active) for contact form integration
+
+my-first-project/
+├── assets/                  # Contains all the resources
+│   ├── images/              # Images for the site
+│   ├── css/                 # CSS files
+│   ├── scss/                # SCSS files for styling
+│   ├── js/                  # JavaScript files
+│   ├── .vscode/             # settings.json
+│   └── fonts                # Fonts
+├── index.html               # Main page
+├── about.html               # "About" page
+├── cv.html                  # Curriculum Vitae page
+├── contacts.html            # Contact page
+├── .gitignore               # Git ignore file
+└── README.md                # This file
+
 
 📍 Coordinates featured on the homepage:
 > N 44°47'04.2"  

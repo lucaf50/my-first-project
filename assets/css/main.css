@@ -126,7 +126,6 @@ body.dark-theme {
 .form-row input[type=text],
 .form-row input[type=email] {
   background-color: var(--primary-color);
-  border-bottom: 2px solid var(--detail-color);
   border-radius: 3px;
   width: 100%;
   padding: 7px;
@@ -134,15 +133,15 @@ body.dark-theme {
   border: none;
   color: var(--text-color);
 }
-.form-row input[type=text]:invalid,
-.form-row input[type=email]:invalid {
-  border: 1px solid #D55C5F;
-  color: #D55C5F;
-  box-shadow: none;
-}
 .form-row input[type=text]:focus,
 .form-row input[type=email]:focus {
   outline: 2px solid var(--secondary-color);
+}
+.form-row input[type=text]:focus:invalid,
+.form-row input[type=email]:focus:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
 }
 .form-row textarea {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -222,7 +221,7 @@ section {
   color: var(--text-color);
   display: flex;
   justify-content: center;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .curriculum {
@@ -239,7 +238,8 @@ section {
 }
 .curriculum ul {
   list-style: none;
-  width: 50%;
+  width: 100%;
+  max-width: 600px;
 }
 .curriculum ul li {
   font-size: 1.1em;
@@ -255,7 +255,6 @@ section {
     align-items: flex-end;
   }
   .curriculum h2 {
-    align-items: flex-start;
     width: 100%;
   }
   .curriculum ul {

@@ -36,23 +36,23 @@
     input[type='text'],
     input[type='email'] {
         background-color: var(--primary-color);
-        border-bottom: 2px solid var(--detail-color);
         border-radius: 3px;
         width: 100%;
         padding: 7px;
         font-size: 14px;
         border: none;
         color: var(--text-color);
-
-        &:invalid {
+        
+        &:focus {
+                    outline: 2px solid var(--secondary-color);
+        }
+        
+        &:focus:invalid {
             border: 1px solid #D55C5F;
             color: #D55C5F;
             box-shadow: none;
         }
-
-        &:focus {
-            outline: 2px solid var(--secondary-color);
-        }
+        
     }
 
     textarea {
